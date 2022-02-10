@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in</title>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+  <div id="login-button">
+    <img src="https://dqcgrsy5v35b9.cloudfront.net/cruiseplanner/assets/img/icons/login-w-icon.png">
+    </img>
+  </div> 
+  <div id="container">
+    <h1>Log In</h1>
+    <span class="close-btn">
+      <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+    </span>
+  
+    <form>
+      <input type="email" name="email" placeholder="user name">
+      <input type="password" name="pass" placeholder="Password">
+      <a id="btnlogin">Log in</a>
+      <div id="remember-container">
+        <input type="checkbox" id="checkbox-2-1" class="checkbox" checked="checked"/>
+        <span id="remember">Remember me</span>
+        <span id="forgotten">Registration</span>
+      </div>
+  </form>
+  </div>
+  
+  <!-- Forgotten Password Container -->
+  <div id="forgotten-container">
+     <h1>Add user</h1>
+    <span class="close-btn">
+      <img src="https://cdn4.iconfinder.com/data/icons/miu/22/circle_close_delete_-128.png"></img>
+    </span>
+  
+    <form>
+      <input type="email" name="Remail" placeholder="E-mail">
+      <input type="text" name="Rusername" placeholder="User Name">
+      <input type="password" name="Rpassword" placeholder="Password">
+      <a href="#" class="add-btn">Add</a>
+  </form>
+  </div>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js" integrity="sha512-BzcSFxmHCzqSxULkAtfJQOwzt0f8HlE0GDFLfe5Bocfv7TNiO5Lcd/xZL3/erRX0Yx62KlqEHDAFhp5F+ovGrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/PixiPlugin.min.js" integrity="sha512-sSYM7MQVTmI4X9VmroJBmkixnxxX6TFRKfzXgFg7PXWz7VeYwGgEeqK7cVRZPFw30sjH3aZOhiwLv6ObJpoWRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/TweenLite.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>

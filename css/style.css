@@ -1,0 +1,365 @@
+/* impotes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+/* reset */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* root */
+:root
+{
+    --body-font: "Poppins", sans-serif;
+    --theme-bg-color: rgba(16 18 27 / 40%);
+    --border-color: rgba(113 119 144 / 25%);
+    --theme-color: #f9fafb;
+    --inactive-color: rgb(113 119 144 / 78%);
+    --body-font: "Poppins", sans-serif;
+    --hover-menu-bg: rgba(12 15 25 / 30%);
+    --content-title-color: #999ba5;
+    --content-bg: rgb(146 151 179 / 13%);
+    --button-inactive: rgb(249 250 251 / 55%);
+    --dropdown-bg: #21242d;
+    --dropdown-hover: rgb(42 46 60);
+    --popup-bg: rgb(22 25 37);
+    --search-bg:  #14162b;
+    --overlay-bg: rgba(36, 39, 59, 0.3);
+    --scrollbar-bg: rgb(1 2 3 / 40%);
+}
+body {
+    font-family: var(--body-font);
+    background: url(http://cdn.magdeleine.co/wp-content/uploads/2014/05/3jPYgeVCTWCMqjtb7Dqi_IMG_8251-1400x933.jpg) no-repeat center center fixed; 
+    background:rgb(134, 26, 26);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    width: 100%;
+    height: fit-content
+   }
+   /* ------------------------ */
+header
+   {
+       height: 30px;
+       border-bottom: 1px dotted gray;
+   }
+.contaner
+   {
+       width:90%;
+       height: fit-content;
+       margin: auto;
+        background: rgba(0, 0, 0, 0.399); 
+       padding: 30px;
+       position: relative;
+       border-radius: 20px;
+   }
+   /* ----------start icon------------------ */
+.circle
+   {
+    width: 80px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    position: absolute;
+    left:5px;
+    top:15px
+   }
+.circle span
+   {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    margin-right: 6px
+   }
+.circle span:nth-child(2)
+   {
+    background-color:gold;
+   }
+.circle span:nth-child(3)
+   {
+    background-color:green;
+   }
+   span
+   {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   /* -------------End icon--------------- */
+   h1
+   {
+    text-align: center;
+    color: honeydew;
+    padding: 0;
+    margin:0;
+   }
+   .footbtn
+   {
+     width: fit-content;
+     margin: auto;
+   }
+   .form1,
+   .form2
+   {
+       width: 100%;
+   }
+.section-1
+   {
+    background: rgba(9, 9, 9, 0.351);
+    margin: auto;
+    width:60%;
+    border-radius: 20px;
+    padding: 15px;
+    color: rgba(169, 161, 161, 0.721);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    overflow: hidden;
+    translate:2s;
+    display: none;
+   }
+   .form2
+   {
+     display: none;
+   }
+.section-1:hover{
+    background: rgba(9, 9, 9, 0.351);
+    transform: scale(1);
+    border: #f9fafb solid 1px;
+   }
+.section-1:hover label{
+    color: whitesmoke;
+   }
+.student-iputs
+   {
+    width:70%;
+    margin:auto;
+   }
+.student-iputs div
+   {
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding:30px 0;
+    }
+.student-iputs div input ,
+#DepartmentInput
+   {
+    width: 75%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color:#61616e95;
+    border: 1px solid blanchedalmond;
+    font-size:18px;
+    color:#fff;
+   }
+   #studentdepartment
+   {
+    width: 75%;
+    padding: 15px;
+    border-radius: 10px;
+    outline: none;
+    background-color:#61616e95;
+    border: 1px solid blanchedalmond;
+    font-size:18px;
+    color:#fff;
+   }
+.student-iputs div:not(:last-child)
+   {
+       border-bottom: 1px gray dotted;
+   }
+  
+   .saveEdittButton,
+   .saveEditedepart
+   {
+      display: none;
+   }
+.saveStudentButton,
+.addStudentButton,
+.saveEdittButton,
+.addDepartmentbutton,
+.saveDepartmentButton,
+.saveEditedepart,
+.Add
+   {
+    padding:6px 30px;
+    border-radius: 15px;
+    background:#3a6df0 ;
+    outline: none;
+    border:none;
+    color:#fff;
+    bottom:-50px;
+    cursor:pointer;
+    margin: 10px;
+   }
+   .Add
+   {
+    margin-top:60px;
+    transform: translate(350px,25px);
+   }
+   /* ================================================== */
+.search{
+    margin: auto;
+    width:300px;
+    height: 40px;
+    display: flex;
+    width: 100%;
+    max-width: 400px;
+    padding-left: 16px;
+    border-radius: 15px;
+   }
+.search input {
+    position: relative;
+    bottom:20px;
+    border-radius:25px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--search-bg);
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 0 20px 0 40px;
+    box-shadow: 0 0 0 2px rgb(134 140 160 / 2%);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56.966 56.966' fill='%23717790c7'%3e%3cpath d='M55.146 51.887L41.588 37.786A22.926 22.926 0 0046.984 23c0-12.682-10.318-23-23-23s-23 10.318-23 23 10.318 23 23 23c4.761 0 9.298-1.436 13.177-4.162l13.661 14.208c.571.593 1.339.92 2.162.92.779 0 1.518-.297 2.079-.837a3.004 3.004 0 00.083-4.242zM23.984 6c9.374 0 17 7.626 17 17s-7.626 17-17 17-17-7.626-17-17 7.626-17 17-17z'/%3e%3c/svg%3e");
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 16px 48%;
+    color: var(--theme-color);
+   }
+.search input::placeholder {
+    font-family: var(--body-font);
+    color: var(--inactive-color);
+    font-size: 15px;
+    font-weight: 500;
+     }
+     table tr:hover
+     {
+       transform: scale(1.0.5);
+       box-shadow: 3px 5px 12px rgb(114, 114, 114);
+     }
+
+   /* ================================================== */
+  
+   .section-2
+   {
+    margin-top: 50px;
+    background: rgba(225, 218, 218, 0.173);
+    margin: auto;
+    width:90%;
+    border-radius: 20px;
+    padding: 25px;
+    color: rgba(169, 161, 161, 0.721);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+   }
+   table
+   {
+       width:100%;
+        border-radius: 30px;
+       text-align:center;
+       height: fit-content;
+   }
+   table .operation
+   {
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+   }
+   .Update
+   {
+    padding:6px 15px; 
+    border-radius: 15px;
+    background:transparent ;
+    outline: none;
+    border:1px solid rgb(84, 83, 83);
+    color:#fff;
+   }
+   .Update:hover
+   {
+    background: rgb(211, 180, 6);
+    cursor: pointer;
+   }
+   .Delete
+   {
+    padding:6px 15px; 
+    border-radius: 15px;
+    background:transparent ;
+    outline: none;
+    border:1px solid  rgb(84, 83, 83);
+    color:#fff;
+   }
+   .Delete:hover
+   {
+    background: red;
+      cursor: pointer;
+   }
+   table .operation
+  {
+      position: relative;
+      width: 70%;
+      display:flex;
+      justify-content: space-between;
+      margin: auto;
+  }
+  table tr {
+    background-color: rgba(240, 234, 234, 0.303);
+    border-collapse: none;
+  }
+  table tr:hover
+  {
+    background-color: rgba(28, 27, 27, 0.666);
+    color: #fff;
+  }
+  td{
+    padding: 15px;
+    color: #fff;
+  }
+  tr:nth-child(odd) {
+    background-color: rgba(33, 31, 31, 0.454);
+    border-collapse: none;
+  }
+  tr:nth-child(odd),.Delete.Update
+  {
+   border:1px solid rgba(46, 45, 45, 0.858);
+  }
+  thead
+  {
+    border-radius: 30px;
+  }
+  th {
+    padding: 10px 10px;
+    background-color: #333;
+    color: #fff;
+  }
+  th:first-child
+  {
+      border-radius:30px 0 0 0 ;
+  }
+  th:last-child
+  {
+      border-radius:0 30px 0 0 ;
+  }
+table tbody tr:last-of-type td:first-of-type
+{
+    border-radius:0 0 0 30px ;
+}
+table tbody tr:last-of-type td:last-of-type
+{
+    border-radius:0 0 30px 0 ;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link href="//cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="contaner">
+        <header>
+            <div class="circle">
+                <span><a href="login.html">x</a></span><span></span><span></span>
+            </div>
+            <h1>Students</h1>
+        </header>
+        <!-- ============================================================================ -->
+        <div class="section-1">
+            <div  class="form2">
+                <div class="student-iputs">
+                    <!-- ------------ -->
+                    <div class="Student-name">
+                        <label for="StudenttID">Department id </label>
+                        <input type="text" id="DepartmentInputId">
+                    </div>
+                    <!-- ------------ -->
+                    <div class="Student-name">
+                        <label for="StudenttID">Department name</label>
+                        <input type="text" id="DepartmentInput"> 
+                    </div>
+                    <!-- ------------ -->
+                     <div class="footbtn">
+                         <button  class="addStudentButton">Add Student</button>
+                         <button  class="saveEditedepart"> Save Edit</button>
+                         <button  class="saveDepartmentButton">save Department</button>
+                     </div>
+                </div>
+
+            </div>
+            <div  class="form1">
+                <div class="student-iputs">
+                    <!-- ------------ -->
+                    <div class="Student-name">
+                        <label for="StudenttID">Student id</label>
+                        <input type="number" id="StudenttID" readonly placeholder="readonly">
+                    </div>
+                    <!-- ------------ -->
+                    <div class="student-name">
+                        <label for="StudenttName">Student Name</label>
+                        <input type="text" id="StudenttName">
+                    </div>
+                    
+                    <!-- ------------ -->
+                    <div class="student-price">
+                        <label  for="studentdepartment">Department </label>
+                        <select  id="studentdepartment">
+                            
+                        </select>
+                    </div>   
+                    <div class="footbtn">
+                        <button  class="saveStudentButton">Save New Student</button>
+                        <button  class="saveEdittButton">Save Edit</button>
+                        <button  class="addDepartmentbutton">Add Department</button>
+                    </div>  
+                </div>
+
+            </div>
+        </div>
+        <!-- ============================================================================ -->
+  
+
+        <button  class="Add">Add</button>
+             <br>
+        <!-- ================================================== -->
+        <div class="search">
+                <input type="text" placeholder="Search">
+        </div>
+        <!-- ================================================== -->
+        <div class="section-2">
+          
+                <table border="1" class="table table-dark table-striped">
+                    <thead id="tableHead">
+                       
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+        </div>
+        
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js" integrity="sha512-BzcSFxmHCzqSxULkAtfJQOwzt0f8HlE0GDFLfe5Bocfv7TNiO5Lcd/xZL3/erRX0Yx62KlqEHDAFhp5F+ovGrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/PixiPlugin.min.js" integrity="sha512-sSYM7MQVTmI4X9VmroJBmkixnxxX6TFRKfzXgFg7PXWz7VeYwGgEeqK7cVRZPFw30sjH3aZOhiwLv6ObJpoWRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/TweenLite.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/file.js"></script>
+</body>
+</html>
+
+
